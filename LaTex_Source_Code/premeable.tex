@@ -1,0 +1,107 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{microtype}
+\usepackage[smallerops,vvarbb]{newtxmath}
+\usepackage[varqu,varl]{inconsolata}%
+\usepackage[scaled=0.95]{helvet}
+\DeclareMathAlphabet{\mathsfit}{T1}{\sfdefault}{\mddefault}{\sldefault}
+\SetMathAlphabet{\mathsfit}{bold}{T1}{\sfdefault}{\bfdefault}{\sldefault}
+\DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n}
+\usepackage{mathtools,accents}
+\usepackage{xifthen,enumitem,comment}
+\setlist[enumerate,1]{label=\normalfont{(\Roman*)},leftmargin=2em}
+\usepackage{xcolor}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\env@cases}{1.2}{0.96}{}{}
+\makeatother
+\usepackage{algorithm,algpseudocode}
+\usepackage[hypertexnames=false]{hyperref}
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor={blue!66!black},%
+  linkbordercolor=red,%
+  citecolor={blue!66!black},
+}
+\usepackage{booktabs,tikz,pgfplots,subfigure}
+\usetikzlibrary{matrix,decorations.pathreplacing}
+
+\newcommand{\TBA}{{\color{red}{TBA}}}
+\ifx\argmax\undefined\DeclareMathOperator*{\argmax}{arg\,max}\fi
+\ifx\argmin\undefined\DeclareMathOperator*{\argmin}{arg\,min}\fi
+\DeclareMathOperator*{\esssupOp}{-ess\,sup}
+\DeclareMathOperator*{\tsum}{\textstyle{\sum\limits}}
+\providecommand\esssup[2]{\underset{#2}{#1\!\esssupOp}}
+\providecommand{\Norm}[1]{\lVert\hspace{1pt}#1\hspace{1pt}\rVert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\dist}[2]{\norm{#1-#2}}
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\diam}{\mathrm{diam}}
+\providecommand{\inner}[2]{\left\langle#1,#2\right\rangle}
+\providecommand{\Cov}{\mathbb{C}\mathrm{ov}}
+\newcommand*{\QED}{%
+\leavevmode\unskip\penalty9999 \hbox{}\nobreak\hfill
+    \quad\hbox{$\square$}%
+}
+\newcommand*{\QEG}{%
+\leavevmode\unskip\penalty9999 \hbox{}\nobreak\hfill
+    \quad\hbox{$\clubsuit$}%
+}
+\newcommand*{\QDEF}{%
+\leavevmode\unskip\penalty9999 \hbox{}\nobreak\hfill
+    \quad\hbox{$\diamondsuit$}%
+}
+
+\providecommand{\1}{1}
+\providecommand{\allOne}{\boldsymbol{1}}
+\renewcommand{\Pr}{\mathbb{P}}
+\newcommand{\hP}{\hat{\mathbb{P}}}
+\newcommand{\hx}{\hat{x}}
+\newcommand{\hy}{\hat{y}}
+\newcommand{\hz}{\hat{z}}
+\providecommand{\hxi}{\hat{\xi}}
+\providecommand{\hXi}{\hat{\Xi}}
+\providecommand{\E}{\mathbb{E}}
+\providecommand{\R}{\mathbb{R}}
+\providecommand{\CVaR}{\mathbb{C}\textrm{V@R}}
+\providecommand{\Var}{\mathbb{V}\textrm{ar}}
+\providecommand{\Q}{\mathbb{Q}}
+\providecommand{\N}{\mathbb{N}}
+\providecommand{\frakM}{\mathfrak{M}}
+\providecommand{\cA}{\mathcal{A}}
+\providecommand{\cB}{\mathcal{B}}
+\providecommand{\cC}{\mathcal{C}}
+\providecommand{\cD}{\mathcal{D}}
+\providecommand{\cE}{\mathcal{E}}
+\providecommand{\cF}{\mathcal{F}}
+\providecommand{\cG}{\mathcal{G}}
+\providecommand{\cH}{\mathcal{H}}
+\providecommand{\cI}{\mathcal{I}}
+\providecommand{\cJ}{\mathcal{J}}
+\providecommand{\cK}{\mathcal{K}}
+\providecommand{\cL}{\mathcal{L}}
+\providecommand{\cM}{\mathcal{M}}
+\providecommand{\cN}{\mathcal{N}}
+\providecommand{\cO}{\mathcal{O}}
+\providecommand{\cP}{\mathcal{P}}
+\providecommand{\cQ}{\mathcal{Q}}
+\providecommand{\cR}{\mathcal{R}}
+\providecommand{\cS}{\mathcal{S}}
+\providecommand{\cT}{\mathcal{T}}
+\providecommand{\cU}{\mathcal{U}}
+\providecommand{\cV}{\mathcal{V}}
+\providecommand{\cW}{\mathcal{W}}
+\providecommand{\cX}{\mathcal{X}}
+\providecommand{\cY}{\mathcal{Y}}
+\providecommand{\cZ}{\mathcal{Z}}
+\providecommand{\bxi}{\boldsymbol{\xi}}
+\providecommand{\Rad}{\mathfrak{R}}
+\providecommand{\VCdim}{\mathrm{VCdim}}
+\providecommand{\Dirac}{\boldsymbol{\updelta}}
+\providecommand{\bbsigma}{\boldsymbol{\sigma}}
+\providecommand{\tr}{\mathrm{tr}}
+\providecommand{\conv}{\mathrm{conv}}
+
+\definecolor{longhorn}{rgb}{0.8, 0.33, 0.0}
+\newcommand{\rgao}[1]{{\textcolor{longhorn}{#1}}}

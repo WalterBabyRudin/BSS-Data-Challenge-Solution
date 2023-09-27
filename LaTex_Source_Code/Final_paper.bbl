@@ -1,0 +1,34 @@
+\begin{thebibliography}{6}
+\scriptsize
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem[{Bertsimas \protect\BIBand{} Kallus(2020)}]{bertsimas2020predictive}
+Bertsimas D, Kallus N (2020) From predictive to prescriptive analytics.
+  \emph{Management Science} 66(3):1025--1044.
+
+\bibitem[{Bu et~al.(2022)Bu, Simchi-Levi, \protect\BIBand{}
+  Wang}]{bu2022context}
+Bu J, Simchi-Levi D, Wang C (2022) Context-based dynamic pricing with partially
+  linear demand model. \emph{Advances in Neural Information Processing Systems}
+  35:23780--23791.
+
+\bibitem[{Elmachtoub \protect\BIBand{} Grigas(2022)}]{elmachtoub2022smart}
+Elmachtoub AN, Grigas P (2022) Smart “predict, then optimize”.
+  \emph{Management Science} 68(1):9--26.
+
+\bibitem[{Kazaz \protect\BIBand{} Webster(2015)}]{kazaz2015price}
+Kazaz B, Webster S (2015) Price-setting newsvendor problems with uncertain
+  supply and risk aversion. \emph{Operations Research} 63(4):807--811.
+
+\bibitem[{Salinger \protect\BIBand{} Ampudia(2011)}]{salinger2011simple}
+Salinger M, Ampudia M (2011) Simple economics of the price-setting newsvendor
+  problem. \emph{Management Science} 57(11):1996--1998.
+
+\bibitem[{Wang \protect\BIBand{} Chen(2015)}]{wang2015optimal}
+Wang C, Chen X (2015) Optimal ordering policy for a price-setting newsvendor
+  with option contracts under demand uncertainty. \emph{International Journal
+  of Production Research} 53(20):6279--6293.
+
+\end{thebibliography}
